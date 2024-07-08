@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // react-dom/client에서 createRoot를 가져옵니다.
-import "test.css";
+import "./test.css";
 const App = () => {
   return (
     <div>
