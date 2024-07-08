@@ -1,10 +1,13 @@
-import react from "react";
-import reactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom/client"; // react-dom/client에서 createRoot를 가져옵니다.
+
 const App = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>Hello, World!</h1>
     </div>
   );
 };
-reactDOM.render(<App />, document.getElementById("root"));
+
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(<App />);
