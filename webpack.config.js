@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports = {
-  entry: "./src/app.ts",
+  entry: "./src/app.tsx",
   output: {
     filename: "app.bundle.ts",
     path: path.resolve(__dirname, "dist"),
@@ -8,7 +8,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, use: "babel-loader", exclude: "/node_modules/" },
-      { test: /\.ts$/, use: "ts-loader", exclude: "/node_modules/" },
+      { test: /\.ts|tsx$/, use: "ts-loader", exclude: "/node_modules/" },
     ],
     //객체만 받는 배열
     //test, use, exclude 세가지 키만 받는다.
