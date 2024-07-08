@@ -7,8 +7,16 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, use: "babel-loader", exclude: "/node_modules/" },
-      { test: /\.ts|tsx$/, use: "ts-loader", exclude: "/node_modules/" },
+      {
+        test: /\.js|jsx|ts|tsx$/,
+        use: "babel-loader",
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
     ],
     //객체만 받는 배열
     //test, use, exclude 세가지 키만 받는다.
