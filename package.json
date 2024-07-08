@@ -20,5 +20,8 @@
     "webpack-cli": "^5.1.4",
     "wepack": "^0.0.1",
     "wepack-cli": "^0.0.1-security"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
   }
 }
